@@ -1,0 +1,15 @@
+#create new environment for this with the older version of python required
+conda create --name bbenv python=2.7
+
+#activate environment
+conda activate bbenv
+
+#add bioconda 
+conda config --add channels bioconda
+
+#confirm it downloaded
+conda config --get channels
+
+#install HUMAnN 2.0 
+conda install -c bioconda humann2
+

@@ -13,3 +13,6 @@ conda config --get channels
 #install HUMAnN 2.0 
 conda install -c bioconda humann2
 
+#download DEMO files from https://github.com/biobakery/biobakery/wiki/humann2#overview
+humann2_databases --download chocophlan DEMO humann2_database_downloads
+humann2_databases --download uniref DEMO_diamond humann2_database_downloads

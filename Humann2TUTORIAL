@@ -22,3 +22,23 @@ humann2_test
 
 #first download demo.fastq by right clicking link in tutorial, then run (make sure minpath is installed)
 humann2 --input demo.fastq --output demo_fastq
+
+#show the output data (press q to escape file)
+less -S demo_fastq/demo_genefamilies.tsv                                         
+
+#repeat with demo.m8, download by right clicking link in tutorial
+humann2 --input demo.m8 --output demo_m8 
+
+#show the output data (press q to escape file)
+less -S demo.m8  
+
+#repeat with demo.sam, download by right clicking link in tutorial
+humann2 --input demo.sam --output demo_sam --threads 4
+
+#show the output data (press q to escape file)
+less -S demo.sam
+
+humann2 --input demo.fastq --output demo_fastq_noaa --threads 4 --bypass-translated-search
+
+
+

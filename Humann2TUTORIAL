@@ -16,3 +16,9 @@ conda install -c bioconda humann2
 #download DEMO files from https://github.com/biobakery/biobakery/wiki/humann2#overview
 humann2_databases --download chocophlan DEMO humann2_database_downloads
 humann2_databases --download uniref DEMO_diamond humann2_database_downloads
+
+#run tests
+humann2_test
+
+#first download demo.fastq by right clicking link in tutorial, then run (make sure minpath is installed)
+humann2 --input demo.fastq --output demo_fastq
